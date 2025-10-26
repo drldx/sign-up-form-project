@@ -3,21 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  font-size: 18px;
+}
 @font-face {
     font-family: 'Norse Bold'; 
     src: url('./Norse-Bold.otf') format('opentype'); 
     font-weight: normal; 
     font-style: normal; 
 }
-
 body{
-color: white;
-background: black;
 font-family: Roboto, monospace;
 }
-/* .container, aside, main{
-  border: 2px solid;
-} */
 
 .container{
   display: flex;
@@ -38,36 +35,82 @@ main{
   flex-direction: column;
 }
 
-.head, .form, .foot{
+.head, .foot{
   flex: 1;
   background-color: rgb(247 247 247);
   color: black;
+  position: relative;
 }
 .head .text-content{
-  margin: 0px 20px;
-  margin-top: 100px;
+  margin: 40px 50px;
+  margin-top: 25%;
+  position: absolute;
+  bottom: 0;
  }
 .text-content > p:first-child  {
-  font-weight: bolder;
   font-size: 1rem;
   width: 55ch;
   padding-bottom: 20px;
 }
-.foot{
-  padding: 20px 30px;
+.text-content > p:last-child{
+  font-weight: bold;
+}
+.foot {
+  padding: 40px 50px 0px;
+}
+.foot p{
+  padding: 30px 0px;
+}
+.foot a{
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
 }
 .foot button{
-  width: 150px;
-  padding: 10px;
+  padding: 15px 60px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: #596D48;
   color: white;
   box-shadow: 0px 0px 2px 0px #00000082;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .form{
   z-index: 1;
   background-color: white;
   box-shadow: 2px 5px 5px #0000001f;
+  padding: 20px 50px 30px;
+  display: flex;
+}
+
+label{
+  display: block;
+  font-size: 11px;
+  color: #4e5f3f;
+  font-family: 'Courier New', Courier, monospace;
+}
+input{
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+input:focus{
+  outline: none;
+  box-shadow: 2px 2px 5px #00000057;
+  border: 1px solid blue;
+}
+input[type="password"]{
+  border: 1px solid rgb(214, 2, 2);
+}
+.form-container{
+  display: flex;
+  gap: 40px;
+}
+.form-side-left div, .form-side-right div{
+  padding: 15px 0px 0px;
+}
+.form p:first-child{
+  font-size: 1.2rem;
 }
