@@ -16,7 +16,7 @@ body{
 font-family: Roboto, monospace;
 }
 
-.container{
+.container, main, .form-container{
   display: flex;
 }
 
@@ -31,7 +31,6 @@ aside{
 
 main{
   width: 70vw;
-  display: flex;
   flex-direction: column;
 }
 
@@ -63,14 +62,14 @@ main{
 }
 .foot a{
   text-decoration: none;
-  color: #596D48;
+  color: #234e4e;
   font-weight: bold;
 }
 .foot button{
   padding: 15px 60px;
   border: none;
   border-radius: 8px;
-  background-color: #596D48;
+  background-color: #234e4e;
   color: white;
   box-shadow: 0px 0px 2px 0px #00000082;
   font-weight: bold;
@@ -93,6 +92,7 @@ label{
   font-family: 'Courier New', Courier, monospace;
 }
 input{
+  outline: none;
   border: 1px solid #E5E7EB;
   border-radius: 4px;
   font-size: 1.1rem;
@@ -106,7 +106,6 @@ input[type="password"]:invalid{
   border: 1px solid rgb(214, 2, 2);
 }
 .form-container{
-  display: flex;
   gap: 40px;
   flex-wrap: wrap;
 }
