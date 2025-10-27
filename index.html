@@ -29,7 +29,7 @@
         </section>
 
         <section class="form">
-          <form action="#" method="get">
+          <form id="signUpForm" action="" method="POST">
             <p>Lets do this!</p>
 
             <div class="form-container">
@@ -37,30 +37,30 @@
               <div class="form-side-left">
                 <div>
                   <label for="first_name">FIRST NAME</label>
-                  <input type="text" id="first_name"> 
+                  <input type="text" id="first_name" required> 
                 </div>
                 <div>
                   <label for="email">EMAIL</label>
-                  <input type="email" id="email">
+                  <input type="email" id="email" required>
                 </div>
                 <div>
                   <label for="password">PASSWORD</label>
-                  <input type="password" id="password">
+                  <input type="password" id="password" required>
                 </div>
               </div>
 
               <div class="form-side-right">
                 <div>
                   <label for="last_name">LAST NAME</label>
-                  <input type="text" id="last_name">
+                  <input type="text" id="last_name" required>
                 </div>
                 <div>
                   <label for="phone-number">PHONE NUMBER</label>
-                  <input type="text" id="phone-number">
+                  <input type="text" id="phone-number" required minlength="10" maxlength="10" pattern="^[0-9]{10}$">
                 </div>
                 <div>
                   <label for="confirm-password">CONFIRM PASSWORD</label>
-                  <input type="password" id="confirm-password">
+                  <input type="password" id="confirm-password" required minlength="8" maxlength="25">
                 </div>
               </div>
           
@@ -71,7 +71,7 @@
         </section>
 
         <section class="foot">
-          <button>Create Account</button>
+          <button type="submit" form="signUpForm">Create Account</button>
           <p>Already have an account? <a href="#">Log in</a> </p>
           
         </section>

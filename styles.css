@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: 'Norse Bold'; 
-    src: url('./Norse-Bold.otf') format('opentype'); 
+    src: url('fonts/Norse-Bold.otf') format('opentype'); 
     font-weight: normal; 
     font-style: normal; 
 }
@@ -21,7 +21,7 @@ font-family: Roboto, monospace;
 }
 
 aside{
-  background-image: url(./cover_image.jpg);
+  background-image: url(images/cover_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,6 +75,7 @@ main{
   box-shadow: 0px 0px 2px 0px #00000082;
   font-weight: bold;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 
 .form{
@@ -101,12 +102,13 @@ input:focus{
   box-shadow: 2px 2px 5px #00000057;
   border: 1px solid blue;
 }
-input[type="password"]{
+input[type="password"]:invalid{
   border: 1px solid rgb(214, 2, 2);
 }
 .form-container{
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .form-side-left div, .form-side-right div{
   padding: 15px 0px 0px;
