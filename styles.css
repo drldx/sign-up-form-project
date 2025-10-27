@@ -16,7 +16,7 @@ body{
 font-family: Roboto, monospace;
 }
 
-.container, main, .form-container{
+.container, main, .form-container, .leftSection{
   display: flex;
 }
 
@@ -27,6 +27,7 @@ aside{
   background-position: center;
   width: 30vw;
   height: 100vh;
+  position: relative;
 }
 
 main{
@@ -114,4 +115,33 @@ input[type="password"]:invalid{
 }
 .form p:first-child{
   font-size: 1.2rem;
+}
+
+aside div > img:first-child{
+  width: 100px;
+}
+.leftSection{
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0deg 0% 0% / 52%); 
+  position: relative;
+  top: 10rem;
+  padding: 0.5rem;
+}
+
+.logo-text{
+  color: white;
+  font-family: "Norse Bold";
+  font-size: 5rem;
+}
+
+.credit{
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: small;
+}
+.credit a, .credit{
+  color: white;
 }
