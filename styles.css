@@ -21,7 +21,7 @@ font-family: Roboto, monospace;
 }
 
 aside{
-  background-image: url(images/cover_image.jpg);
+  background-image: url(./images/cover_img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@ main{
   padding: 15px 60px;
   border: none;
   border-radius: 8px;
-  background-color: #234e4e;
+  background-color: #374747;
   color: white;
   box-shadow: 0px 0px 2px 0px #00000082;
   font-weight: bold;
